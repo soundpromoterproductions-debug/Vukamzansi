@@ -1,1 +1,575 @@
-# Vukamzansi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuka Mzansi - Awaken South Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .bg-pattern {
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-20 left-20 w-64 h-64 bg-white rounded-full opacity-10 floating"></div>
+            <div class="absolute bottom-20 right-20 w-48 h-48 bg-purple-300 rounded-full opacity-20 floating" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/3 right-1/4 w-32 h-32 bg-blue-200 rounded-full opacity-15 floating" style="animation-delay: 4s;"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 text-shadow-lg shadow-purple-900">
+                VUKA MZANSI
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">
+                Awakening the Spirit of South Africa - Together We Rise
+            </p>
+            <div class="pulse">
+                <div class="w-16 h-16 mx-auto border-4 border-white rounded-full animate-spin border-t-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="content-card p-8 md:p-12 mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+                    About Our Movement
+                </h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Vuka Mzansi represents the awakening of South Africa's potential and spirit. We are a collective movement dedicated to uplifting communities, fostering unity, and driving positive change across our beautiful nation. Our mission is to inspire action, promote sustainable development, and celebrate the rich cultural heritage that makes South Africa truly unique.
+                </p>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Through collaborative efforts and shared vision, we aim to address the challenges facing our communities while embracing the opportunities that lie ahead. Join us in this journey of transformation and be part of the change you wish to see in our beloved country.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Community Development</h3>
+                    <p class="text-gray-600">Empowering local communities through education, skills development, and sustainable projects that create lasting impact.</p>
+                </div>
+                
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Unity & Collaboration</h3>
+                    <p class="text-gray-600">Bringing people together across cultural and social boundaries to work towards common goals and shared prosperity.</p>
+                </div>
+                
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation & Growth</h3>
+                    <p class="text-gray-600">Fostering innovation, entrepreneurship, and economic growth through technology, creativity, and forward-thinking solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="py-16 px-4 bg-white bg-opacity-90">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Our Vision in Action
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c257a0c-7f39-4ed3-904c-fb433b33b706.png" 
+                            alt="Community gathering in vibrant township showing diverse group of South Africans working together on urban renewal project"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center text-white\">Community Unity</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Community Unity</h4>
+                        <p class="text-gray-600">Bringing people together for positive change</p>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0778a9a-f1b9-4579-b7e5-c94eed449e4d.png" 
+                            alt="Youth education program in modern classroom setting with diverse students engaged in digital learning and technology skills development"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center text-white\">Education & Growth</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Education & Growth</h4>
+                        <p class="text-gray-600">Empowering the next generation</p>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d772bdff-7758-4bab-bb72-8304387ed97f.png" 
+                            alt="Sustainable agriculture project in rural South Africa showing farmers working with modern equipment in green fields with mountains in background"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-white\">Sustainable Farming</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Sustainable Farming</h4>
+                        <p class="text-gray-600">Growing together, feeding the nation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="content-card p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    Join the Movement
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Be part of the change. Together, we can build a brighter future for South Africa.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105">
+                        Get Involved
+                    </button>
+                    <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-3 px-8 rounded-full transition-all duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Links -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Vuka Mzansi</h3>
+                    <p class="text-gray-400">Awakening South Africa's potential through unity, innovation, and sustainable development.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Get Involved</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Facebook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-gray-400 mb-2">info@vukamzansi.org</p>
+                    <p class="text-gray-400 mb-2">+27 123 456 7890</p>
+                    <p class="text-gray-400">Johannesburg, South Africa</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 Vuka Mzansi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add intersection observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all content cards and images
+            document.querySelectorAll('.content-card, .group').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add CSS for fade-in animation
+            const style = document.createElement('style');
+            style.textContent = `
+                .animate-fade-in {
+                    animation: fadeInUp 0.8s ease-out forwards;
+                    opacity: 0;
+                }
+                
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
+
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuka Mzansi - Awaken South Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
+        }
+        
+        .content-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .bg-pattern {
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 hero-gradient"></div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-20 left-20 w-64 h-64 bg-white rounded-full opacity-10 floating"></div>
+            <div class="absolute bottom-20 right-20 w-48 h-48 bg-purple-300 rounded-full opacity-20 floating" style="animation-delay: 2s;"></div>
+            <div class="absolute top-1/3 right-1/4 w-32 h-32 bg-blue-200 rounded-full opacity-15 floating" style="animation-delay: 4s;"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 text-shadow-lg shadow-purple-900">
+                VUKA MZANSI
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">
+                Awakening the Spirit of South Africa - Together We Rise
+            </p>
+            <div class="pulse">
+                <div class="w-16 h-16 mx-auto border-4 border-white rounded-full animate-spin border-t-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="content-card p-8 md:p-12 mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+                    About Our Movement
+                </h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Vuka Mzansi represents the awakening of South Africa's potential and spirit. We are a collective movement dedicated to uplifting communities, fostering unity, and driving positive change across our beautiful nation. Our mission is to inspire action, promote sustainable development, and celebrate the rich cultural heritage that makes South Africa truly unique.
+                </p>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Through collaborative efforts and shared vision, we aim to address the challenges facing our communities while embracing the opportunities that lie ahead. Join us in this journey of transformation and be part of the change you wish to see in our beloved country.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <span class="text-2xl">🌍</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Community Development</h3>
+                    <p class="text-gray-600">Empowering local communities through education, skills development, and sustainable projects that create lasting impact.</p>
+                </div>
+                
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                        <span class="text-2xl">🤝</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Unity & Collaboration</h3>
+                    <p class="text-gray-600">Bringing people together across cultural and social boundaries to work towards common goals and shared prosperity.</p>
+                </div>
+                
+                <div class="content-card p-6 text-center group hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-200 transition-colors">
+                        <span class="text-2xl">🚀</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Innovation & Growth</h3>
+                    <p class="text-gray-600">Fostering innovation, entrepreneurship, and economic growth through technology, creativity, and forward-thinking solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="py-16 px-4 bg-white bg-opacity-90">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+                Our Vision in Action
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c257a0c-7f39-4ed3-904c-fb433b33b706.png" 
+                            alt="Community gathering in vibrant township showing diverse group of South Africans working together on urban renewal project"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-blue-400 to-purple-500 rounded-2xl flex items-center justify-center text-white\">Community Unity</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Community Unity</h4>
+                        <p class="text-gray-600">Bringing people together for positive change</p>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0778a9a-f1b9-4579-b7e5-c94eed449e4d.png" 
+                            alt="Youth education program in modern classroom setting with diverse students engaged in digital learning and technology skills development"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-green-400 to-blue-500 rounded-2xl flex items-center justify-center text-white\">Education & Growth</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Education & Growth</h4>
+                        <p class="text-gray-600">Empowering the next generation</p>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-2xl shadow-lg">
+                        <img 
+                            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d772bdff-7758-4bab-bb72-8304387ed97f.png" 
+                            alt="Sustainable agriculture project in rural South Africa showing farmers working with modern equipment in green fields with mountains in background"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\"w-full h-64 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-white\">Sustainable Farming</div>'"
+                        />
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold text-lg">Sustainable Farming</h4>
+                        <p class="text-gray-600">Growing together, feeding the nation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="content-card p-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                    Join the Movement
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Be part of the change. Together, we can build a brighter future for South Africa.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 transform hover:scale-105">
+                        Get Involved
+                    </button>
+                    <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold py-3 px-8 rounded-full transition-all duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Links -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Vuka Mzansi</h3>
+                    <p class="text-gray-400">Awakening South Africa's potential through unity, innovation, and sustainable development.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Get Involved</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Facebook</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Twitter</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Instagram</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <p class="text-gray-400 mb-2">info@vukamzansi.org</p>
+                    <p class="text-gray-400 mb-2">+27 123 456 7890</p>
+                    <p class="text-gray-400">Johannesburg, South Africa</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 Vuka Mzansi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add intersection observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all content cards and images
+            document.querySelectorAll('.content-card, .group').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Add CSS for fade-in animation
+            const style = document.createElement('style');
+            style.textContent = `
+                .animate-fade-in {
+                    animation: fadeInUp 0.8s ease-out forwards;
+                    opacity: 0;
+                }
+                
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
+
+```
