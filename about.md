@@ -4,7 +4,7 @@ title: About Me
 type: page
 ---
 
-# Your Name/Project Name
+# Vuka Mzansi
 ## A short, descriptive tagline.
 
 ---
